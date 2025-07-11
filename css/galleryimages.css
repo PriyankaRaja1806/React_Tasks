@@ -1,21 +1,39 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  background-color: black;
+}
 
 div.description {
   padding: 15px;
   text-align: center;
 }
-.gallery-item{
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center; /* <-- this centers the images horizontally */
+  gap: 20px;               /* <-- spacing between images */
+  padding: 30px;
+}
+
+.gallery img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+/*.gallery-item{
     margin-left: 40px;
   padding: 50px 6px;
   float: left;
   width: 30%;
   object-fit: cover;
-}
+}*/
 h1{
     text-align: center;
+    color: white;
 }
 
 

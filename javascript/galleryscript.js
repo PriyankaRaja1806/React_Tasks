@@ -8,7 +8,7 @@ const closeBtn = document.getElementById('close');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 
-const images = document.querySelectorAll('.gallery-img');
+const images = document.querySelectorAll('.gallery img');
 let currentIndex = 0;
 
 // Open modal when an image is clicked
