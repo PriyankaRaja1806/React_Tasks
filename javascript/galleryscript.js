@@ -11,7 +11,7 @@ const prevBtn = document.getElementById('prev');
 const images = document.querySelectorAll('.gallery-img');
 let currentIndex = 0;
 
-// Open modal when an image is clicked
+
 images.forEach((img, index) => {
   img.addEventListener('click', () => {
     currentIndex = index;
@@ -25,24 +25,24 @@ function openModal() {
   captionText.textContent = images[currentIndex].alt;
 }
 
-// Close modal
+
 closeBtn.onclick = () => {
   modal.style.display = 'none';
 };
 
-// Navigate to next image
+
 nextBtn.onclick = () => {
   currentIndex = (currentIndex + 1) % images.length;
   openModal();
 };
 
-// Navigate to previous image
+
 prevBtn.onclick = () => {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   openModal();
 };
 
-// Optional: close modal on outside click
+
 window.onclick = (event) => {
   if (event.target == modal) {
     modal.style.display = 'none';
