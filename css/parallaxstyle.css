@@ -1,0 +1,120 @@
+  body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      
+
+}
+    
+
+    /* Parallax Sections */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+    }
+
+
+    .parallax1 {
+      background-image: url('../Images/img9.jpg');
+      display: flex;
+      justify-content: center; 
+      align-items: center;    
+}
+    
+
+    
+    .parallax2 {
+      background-image: url('../Images/img10.jpg');
+      height: 400px;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+
+    .parallax3{
+        background-image: url('../Images/img11.jpg');
+        height: 400px;
+    }
+
+    
+.parallax-text{
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-text:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-text:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-text::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.parallax-text::after {
+  background-color: #fff;
+}
+
+.parallax-text:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+  .content {
+      padding: 50px 80px;
+      text-align: center;
+      background-color: white;
+      color: black;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .dark-section {
+      background-color: #111;
+      color: #ddd;
+      padding: 30px;
+      text-align: center;
+    }
