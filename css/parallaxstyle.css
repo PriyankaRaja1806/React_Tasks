@@ -39,6 +39,9 @@
     .parallax3{
         background-image: url('../Images/img11.jpg');
         height: 400px;
+        display: flex;
+      justify-content: center; 
+      align-items: center;
     }
 
     
