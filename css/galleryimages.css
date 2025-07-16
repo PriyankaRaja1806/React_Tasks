@@ -14,8 +14,8 @@ div.description {
   display: flex;
   flex-wrap: wrap;
   
-  justify-content: center; /* <-- this centers the images horizontally */
-  gap: 20px;               /* <-- spacing between images */
+  justify-content: center; 
+  gap: 20px;               
   padding: 30px;
 }
 
@@ -24,13 +24,7 @@ div.description {
   height: 500px;
   object-fit: cover;
 }
-/*.gallery-item{
-    margin-left: 40px;
-  padding: 50px 6px;
-  float: left;
-  width: 30%;
-  object-fit: cover;
-}*/
+
 h1{
     text-align: center;
     color: white;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Finance Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboardstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="javascript/dashboardscript.js"></script>
+
+  
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="Images/instagram.jpg" alt="insta" width="80" height="60" style="border-radius:50%;">
+        <span></span>
+      </div>
+      <nav class="my-navbar">
+
+        <a href="#" class="active">
+          <i class="fas fa-gauge-high fa-lg" style="color: #ff006a;"></i>My dashboard
+        </a>
+        
+        <a href="#">
+          <i class="fas fa-users"></i> Accounts
+        </a>
+
+        <a href="#">
+          <i class="fas fa-signal"></i></i> Mobile
+        </a>
+        <a href="#">
+          <i class="fas fa-money-bill-wave"></i> Payments
+        </a>
+        <a href="#">
+          <i class="fas fa-comment-dots"></i> Complaints
+        </a>
+        <a href="#">
+          <i class="fas fa-headset"></i> Supports
+        </a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="header">
+        <div>
+          <div class="title">My finance dashboard</div>
+          <div style="color:#0f0101;font-size:15px;">Welcome to xPay payment portal</div>
+        </div>
+       
+<div class="user-dropdown">
+  <button class="user-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+    <img src="Images/user.jpg" alt="User" width="60" height="60" style="border-radius:50%;">
+    <span>Hello Sam</span>
+    <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+  <div class="user-dropdown-menu" aria-hidden="true">
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+</div>
+      </div>
+      <div class="dashboard">
+
+      
+        <div class="card-outer">
+        <div class="left-col">
+          <div class="card">
+            <img src="Images/profile.jpeg" alt="Profile" class="profile-img">
+
+            <div class="profile-info">
+              <div class="profile-name-phone" style="border-bottom: 2px solid rgb(223, 217, 217);padding: 10px 10px;">
+              <div class="profile-name">Sami Rahman</div>
+              <div class="profile-phone">+1-856-569-959-1230</div>
+            </div>
+            <div class="profile-email-status" style="border-bottom: 2px solid rgb(223, 217, 217);padding: 10px 10px;">
+              <div class="profile-email">sami.rahman0021@gmail.com</div>
+              
+              <div class="profile-status">SMS alerts activation <span style="color:#00c853;">●</span></div><br>
+            </div>
+              <button class="save-btn">Save</button>
+            </div>
+          </div>
+        </div>
+        
+      <div class="right-col">
+          <div class="card">
+            
+            
+             <span class="card-title" style="border-bottom: 2px solid rgb(223, 217, 217);font-weight:600;font-size:18px;padding: 10px 10px;">My xPay accounts</span>
+    <div class="card-actions">
+      <button class="search-btn" aria-label="Search">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <button class="edit-btn">Edit</button>
+      </div>
+            <div class="accounts-list">
+              <div class="account-row">
+                <span>Active account<br><span style="font-size:13px;color:rgb(172, 161, 161);">8640 5680 8081 4525</span></span>
+                <button class="account-btn block account-badge ">Block account</button>
+              </div>
+              <div class="account-row">
+                <span>Blocked account<br><span style="font-size:13px;color:rgb(172, 161, 161)">7842 5690 2041 2345</span></span>
+                <button class="account-btn unblock account-badge">Unlock account</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          <div class="card">
+             <div class="card-header">
+
+            <span class="card-title" >My bills</span>
+              <button class="filter-btn">Filter</button>
+            </div>
+            <div class="bills-list">
+              <div class="bill-row">
+                
+                <span class="bill-name paid">Phone bill</span>
+                <span class="bill-status paid" style="font-size: 14px;color: rgb(26, 7, 7);"> Bill paid</span>
+              </div>
+              <div class="bill-row">
+                
+                <span class="bill-name notpaid">Internet bill</span>
+                <span class="bill-status notpaid" style="font-size: 14px;color: rgb(26, 7, 7);" > Not paid</span>
+              </div>
+              <div class="bill-row">
+                
+                <span class="bill-name paid">House rent</span>
+                <span class="bill-status paid" style="font-size: 14px;color: rgb(26, 7, 7);"> Bill paid</span>
+              </div>
+              <div class="bill-row">
+                 <span class="bill-name paid">Income tax</span>
+                <span class="bill-status paid" style="font-size: 14px;color: rgb(26, 7, 7);"> Bill paid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</body>
+</html>
