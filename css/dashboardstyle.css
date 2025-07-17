@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f7f7 url('../Images/instabackground.jpg') no-repeat center center fixed;
+  background: #f7f7f7 url('../Images/insta.jpg') no-repeat center center fixed;
   background-color: rgba(255, 255, 255, 0.2);
   color: #222;
   height: 100%;
@@ -102,12 +102,13 @@ html, body {
 .dashboard {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .card-outer {
   background: #fff;
   border-radius: 20px;
+   background: rgba(255,255,255,0.8);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   padding: 20px;
   width: 100%;
@@ -118,7 +119,8 @@ html, body {
 }
 
 .left-col, .right-col {
-  flex: 1 1 0;
+  flex: 1;
+
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -133,6 +135,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex:1;
 }
 
 .card-header {
